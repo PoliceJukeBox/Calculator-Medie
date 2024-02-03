@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media cu teza</title>
+    <link rel="stylesheet" href="medieCuTeza.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CALCULATOR MEDII</h1>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>Calculator Media Cu Teza</li>
+            <li>Calculator Media facultate</li>
+            <li>Calculator Medie Liceu</li>
+            <li>Calculator Salariu</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header2">
+            <h1>CALCULATOR MEDIE CU TEZA</h1>
+            <h5><b>Calculeaza media cu teza</b> sau fara teza la orice materie</h5>
+        </div>
+        <div class="calculator">
+            <h2>Calculator Medie Cu Teza</h2>
+            <button id="plus" onclick="add()">Adauga Nota</button>
+            <button id="minus">Elimina Nota</button>
+            <table id="table">
+                <tr>
+                    <th colspan="2"><input type="text" id="input" placeholder="Matrie..."></th>
+                </tr>
+                <tr>
+                    <th>NR.NOTE</th>
+                    <th>NOTE</th>
+                </tr>
+                <tr>
+                    <td class="numar">Nota1</td>
+                    <td><input type="number" class="nota"></td>
+                </tr>
+                <tr>
+                    <td class="numar">Nota2</td>
+                    <td><input type="number" class="nota"></td>
+                </tr>
+                <tr>
+                    <td class="numar">Nota3</td>
+                    <td><input type="number" class="nota"></td>
+                </tr>
+            </table>
+            <div class="rez">
+                <h3>MEDIE REZULTAT</h3>
+                <h3 id="rezultat"> 0 -> 0</h3>
+            </div>
+        </div>
+        <div class="loginContainer">
+            <h3>Conecteaza-te pentru a vedea rezultatele</h3>
+            <button>Conecteaza-te</button>
+            <button>Creeaza cont</button>
+        </div>
+        <div class="imagine">
+            <h1>aici sta imaginea</h1>
+        </div>
+        <div class="descriere">
+            <h1>Descriere</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
