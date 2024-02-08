@@ -9,6 +9,7 @@
     <div class="header">
         <h1>CALCULATOR MEDII</h1>
     </div>
+    
     <div class="nav">
         <ul>
             <li>Calculator Media Cu Teza</li>
@@ -20,36 +21,57 @@
     <div class="container">
         <div class="header2">
             <h1>CALCULATOR MEDIE CU TEZA</h1>
-            <h5><b>Calculeaza media cu teza</b> sau fara teza la orice materie</h5>
+            <h4><b>Calculeaza media cu teza</b> sau fara teza la orice materie</h4>
         </div>
         <div class="calculator">
             <h2>Calculator Medie Cu Teza</h2>
-            <button id="plus" onclick="add()">Adauga Nota</button>
+            <button id="plus">Adauga Nota</button>
             <button id="minus">Elimina Nota</button>
-            <table id="table">
-                <tr>
-                    <th colspan="2"><input type="text" id="input" placeholder="Matrie..."></th>
-                </tr>
-                <tr>
-                    <th>NR.NOTE</th>
-                    <th>NOTE</th>
-                </tr>
-                <tr>
-                    <td class="numar">Nota1</td>
-                    <td><input type="number" class="nota"></td>
-                </tr>
-                <tr>
-                    <td class="numar">Nota2</td>
-                    <td><input type="number" class="nota"></td>
-                </tr>
-                <tr>
-                    <td class="numar">Nota3</td>
-                    <td><input type="number" class="nota"></td>
-                </tr>
-            </table>
+            <div class="container-note">
+                <div class="note">
+                    <h3>NR.NOTE</h3>
+                    <h3>NOTA</h3>
+                </div>
+                <div class="note">
+                    <h4>Nota 1</h4>
+                    <input type="number" class="note-imput" value="10">
+                </div>
+                <div class="note">
+                    <h4>Nota 2</h4>
+                    <input type="number" class="note-imput" value="10">
+                </div>
+                <div class="note">
+                    <h4>Nota 3</h4>
+                    <input type="number" class="note-imput" value="10">
+                </div>
+            </div>
+            <div  id="formTeza" style="margin-bottom: 50px; margin-top: -50px;">
+                <!-- <form action="">
+                    <span>
+                        <input type="radio" id="tezaDA" value="tezaDA">
+                        <label for="tezaDA">Teza DA</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="tezaNU" value="tezaNU">
+                        <label for="tezaNU">Teza NU</label>
+                    </span>
+                </form>  -->
+                <form class="teza">
+                    <span>
+                    <input type="radio" id="tezDa" name="teza" value="tezaDA" onclick="cuTeza()">
+                    <label for="tezaDA" >Teza DA</label></span>
+                    <span>
+                    <input type="radio" id="tezaNU" name="teza" value="tezaNU" onclick="faraTeza()">
+                    <label for="tezaNU">Teza NU</label></span>
+                </form> 
+            </div>
+            <div id="notaTeza" class="note" style="margin-bottom:150px;">
+                <h4>Nota Teza</h4>
+                <input type="number" id="teza" value="10">
+            </div>
             <div class="rez">
                 <h3>MEDIE REZULTAT</h3>
-                <h3 id="rezultat"> 0 -> 0</h3>
+                <h3 id="rezultat"> <span id="rezNerotunjit">10</span> -> <span id="rezRotunjit">10</span></h3>
             </div>
         </div>
         <div class="loginContainer">
@@ -61,9 +83,39 @@
             <h1>aici sta imaginea</h1>
         </div>
         <div class="descriere">
-            <h1>Descriere</h1>
+            <div class="header-descriere">
+                <h2>CALCULATOR MEDIA CU TEZA DESCRIERE</h2>
+            </div>
+            <div class="paragraf">
+                <h3>CUM SE CALCULEAZA MEDIA CU TEZA</h3>
+                <p>Calcularea mediei cu teza se face in doua etape in felul
+                    urmator:</p>
+                <p>In prima etapa se calculeaza media aritmetica a tuturor
+                    notelor obtinute la o anumita materie de-a lungul unui 
+                    semestru. Media se face la doua zecimale exacte fara
+                    rotunjire.</p>
+                <p>In a doua etapa se se aplica formula MF = (3M + T)/4. MF
+                    este media finala pentru materia cu teza, M este media
+                    notelor obtinute in prima etapa, aceasta seinmulteste
+                    cu 3 se aduna cu teza dupa care se imparte la 4.</p>
+                <p>Calcularea mediei cu teza se face insa foarte usor
+                    cu calculatorul de mai sus. Descrierea aceasta este
+                    informativa doar ca sa stiti cum se calculeaza media cu
+                    teza.</p>
+                <p>Media notelor se face la doua zecimale exacte fara
+                    rotunjire. De exemplu o medie de 8.457 nu se rotunjeste
+                    la 8.46 ci se considera 8.45. Aceasta medie (8.45) o
+                    inmultim cu 3 iar rezultatul (25.35) se aduna cu nota
+                    din teza, sa zicem (9) => 25.35 + 9 = 34.35, dupa care
+                    se imparte la 4 => (8.58). Rezultatul calcului se
+                    rotunjeste la o nota intreaga, in cazul nostru 9.</p>
+                <p>Mai jos gasesti exemple concrete de calcule ale
+                    mediei cu teza pentru a intelege cel mai bine metoda
+                    de calcul al mediei cu teza.</p>
+            </div>
         </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
