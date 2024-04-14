@@ -1,9 +1,7 @@
 let plus=document.getElementById("plus");
 let minus=document.querySelector("#minus");
 let containerNote = document.querySelector(".container-note");
-let rezultat=document.querySelector("#rezultat");
 let index=3;
-let table=document.querySelector("#table");
 var noteImput = document.getElementsByClassName("note-imput");
 
 let rezRotunjit = document.getElementById("rezRotunjit");
@@ -30,12 +28,9 @@ plus.addEventListener("click", ()=>{
     input.value = 10;
     input.addEventListener('input', updateSum);
     div.appendChild(input);
-    // updateSum();
-    // noteImput.forEach((noteImput)=>{
-    //     console.log(noteImput);
-    // })
     
     noteImputArray.push(input);
+    console.log(noteImputArray);
 })
 
 minus.addEventListener("click", ()=>{
